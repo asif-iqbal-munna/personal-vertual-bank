@@ -1,46 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Virtual Bank</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <section class="w-3/4 mx-auto mt-12">
-            <div>
-                <h1 class="text-6xl capitalize">let's play with <span class="text-pink-500">moooney</span></h1>
-                <div class="grid grid-cols-3 gap-8 mt-8">
-                    <div class="bg-red-100 p-10">
-                        <h2 class="text-2xl font-semibold mb-1">Deposit</h2>
-                        <h4 class="text-3xl">$<span class="pl-4 font-semibold" id="deposit-balance">00</span></h4>
-                    </div>
-                    <div class="bg-green-100 p-10">
-                        <h2 class="text-2xl font-semibold mb-1">Withdraw</h2>
-                        <h4 class="text-3xl">$<span class="pl-4 font-semibold" id="withdrawal-balance">00</span></h4>
-                    </div>
-                    <div class="bg-blue-100 p-10">
-                        <h2 class="text-2xl font-semibold mb-1">Balance</h2>
-                        <h4 class="text-3xl">$<span class="pl-4 font-semibold" id="current-balance">1240</span></h4>
-                    </div>
-                </div>
+      <section class="w-3/4 mx-auto mt-12">
+        <div>
+          <h1 class="text-3xl md:text-6xl capitalize">
+            let's play with <span class="text-pink-500">moooney</span>
+          </h1>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <div class="bg-red-100 p-10">
+              <h2 class="text-2xl font-semibold mb-1">Deposit</h2>
+              <h4 class="text-3xl">
+                $<span class="pl-4 font-semibold" id="deposit-balance">00</span>
+              </h4>
             </div>
-            <div class="grid grid-cols-2 mt-10 gap-8">
-                <div class="bg-green-300 p-8">
-                    <h2 class="text-2xl font-semibold mb-1 mb-4">Deposit Amount</h2>
-                    <input class="w-3/4 p-2 block mb-4" type="number" name="deposit" id="user-deposited-amount" placeholder="Enter Deposit Amount" autofocus>
-                    <button class="bg-pink-500 px-4 py-1.5 rounded text-white" id="deposit-btn">Deposit</button>
-                </div>
-                <div class="bg-yellow-300 p-8">
-                    <h2 class="text-2xl font-semibold mb-1 mb-4">Withdrawal Amount</h2>
-                    <input class="w-3/4 p-2 block mb-4" type="number" name="deposit" id="user-withdrawal-amount" placeholder="Enter Withdrawal Amount">
-                    <button class="bg-pink-500 px-4 py-1.5 rounded text-white" id="withdrawal-btn">Withdraw</button>
-                </div>
+            <div class="bg-green-100 p-10">
+              <h2 class="text-2xl font-semibold mb-1">Withdraw</h2>
+              <h4 class="text-3xl">
+                $<span class="pl-4 font-semibold" id="withdrawal-balance"
+                  >00</span
+                >
+              </h4>
             </div>
-        </section>
+            <div class="bg-blue-100 p-10">
+              <h2 class="text-2xl font-semibold mb-1">Balance</h2>
+              <h4 class="text-3xl">
+                $<span class="pl-4 font-semibold" id="current-balance"
+                  >1240</span
+                >
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-8">
+          <div class="bg-green-300 p-8">
+            <h2 class="text-2xl font-semibold mb-1 mb-4">Deposit Amount</h2>
+            <input
+              class="w-3/4 p-2 block mb-4"
+              type="number"
+              name="deposit"
+              id="user-deposited-amount"
+              placeholder="Enter Deposit Amount"
+              autofocus
+            />
+            <button
+              class="bg-pink-500 px-4 py-1.5 rounded text-white"
+              id="deposit-btn"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-yellow-300 p-8">
+            <h2 class="text-2xl font-semibold mb-1 mb-4">Withdrawal Amount</h2>
+            <input
+              class="w-3/4 p-2 block mb-4"
+              type="number"
+              name="deposit"
+              id="user-withdrawal-amount"
+              placeholder="Enter Withdrawal Amount"
+            />
+            <button
+              class="bg-pink-500 px-4 py-1.5 rounded text-white"
+              id="withdrawal-btn"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="bank.js"></script>
-</body>
+  </body>
 </html>
